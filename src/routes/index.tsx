@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, SectionHeader, SectionLabel } from "@/components/editorial";
+import { ClientLogos } from "@/components/client-logos";
 import heroInterface from "@/assets/hero-interface.jpg";
 import dataSchema from "@/assets/data-schema.jpg";
 import webPerformance from "@/assets/web-performance.jpg";
@@ -169,6 +170,9 @@ function HomePage() {
           </PageShell>
         </div>
       </section>
+
+      {/* CLIENT LOGOS */}
+      <ClientLogos />
 
       {/* SERVICES — 2 pillars */}
       <section className="border-b border-border py-24 md:py-32">

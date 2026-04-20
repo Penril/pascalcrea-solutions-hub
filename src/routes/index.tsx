@@ -171,6 +171,9 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CLIENT LOGOS */}
+      <ClientLogos />
+
       {/* SERVICES — 2 pillars */}
       <section className="border-b border-border py-24 md:py-32">
         <PageShell>

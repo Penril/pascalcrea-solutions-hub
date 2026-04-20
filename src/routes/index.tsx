@@ -1,22 +1,23 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, SectionHeader, SectionLabel } from "@/components/editorial";
-import heroSystem from "@/assets/hero-system.jpg";
-import systemFlow from "@/assets/system-flow.jpg";
+import heroInterface from "@/assets/hero-interface.jpg";
+import dataSchema from "@/assets/data-schema.jpg";
+import webPerformance from "@/assets/web-performance.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pascalcrea — Sistemas web y plataformas de datos" },
+      { title: "Pascalcrea — Desarrollo web, SEO y ciencia de datos" },
       {
         name: "description",
         content:
-          "Diseñamos sistemas web a medida y plataformas de datos para empresas que toman decisiones basadas en evidencia.",
+          "Construimos sitios y sistemas web, los posicionamos con SEO y SEM, y los conectamos a soluciones de datos que generan resultados medibles.",
       },
-      { property: "og:title", content: "Pascalcrea — Sistemas web y plataformas de datos" },
+      { property: "og:title", content: "Pascalcrea — Desarrollo web, SEO y ciencia de datos" },
       {
         property: "og:description",
         content:
-          "Ingeniería web + ciencia de datos. Construimos sistemas digitales medibles, predecibles y listos para escalar.",
+          "Web + datos bajo un mismo método. Sitios, sistemas, SEO, analítica y modelos predictivos para empresas que miden lo que hacen.",
       },
     ],
   }),
@@ -26,26 +27,26 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     code: "01",
-    title: "Sistemas Web & Aplicaciones a Medida",
+    title: "Sitios Web, SEO & Analítica Digital",
     summary:
-      "Construimos plataformas SaaS, sistemas internos y aplicaciones web a medida. Arquitectura tipada de extremo a extremo, performance medible y código que envejece bien.",
+      "Diseñamos y desarrollamos sitios, e-commerce y sistemas web a medida — y nos aseguramos de que se posicionen, se midan y conviertan. Tu presencia digital como un activo de negocio, no como un entregable.",
     items: [
-      "Plataformas SaaS multi-tenant",
-      "Dashboards y paneles operativos",
-      "E-commerce e integraciones",
-      "Aplicaciones web a medida",
+      "Sitios corporativos, landings & e-commerce",
+      "Sistemas y plataformas web a medida",
+      "SEO técnico, contenidos & posicionamiento",
+      "Google Ads, SEM & medición de conversión",
     ],
   },
   {
     code: "02",
-    title: "Ingeniería & Ciencia de Datos",
+    title: "Datos, Ingeniería & Ciencia Aplicada",
     summary:
-      "Construimos pipelines confiables y modelos que convierten datos crudos en decisiones. Desde la ingesta hasta el modelo en producción, sin fugas ni cajas negras.",
+      "Conectamos tus fuentes, ordenamos los flujos y construimos modelos que convierten datos en decisiones. Desde la automatización operativa hasta el modelo predictivo en producción.",
     items: [
-      "Pipelines ETL/ELT y warehousing",
-      "Modelado predictivo y ML",
-      "Análisis y segmentación",
-      "Dashboards analíticos integrados",
+      "Automatización & pipelines ETL/ELT",
+      "Dashboards & analítica avanzada",
+      "Modelos predictivos & ciencia de datos",
+      "Soluciones de datos aplicadas al negocio",
     ],
   },
 ] as const;
@@ -95,16 +96,17 @@ function HomePage() {
               </div>
 
               <h1 className="text-balance font-display text-[44px] font-semibold leading-[0.95] tracking-tight text-ink md:text-7xl lg:text-[88px]">
-                Sistemas digitales.
+                <span className="text-blueprint">Web</span> que convierte.
                 <br />
-                <span className="text-blueprint">Decisiones</span> basadas en datos.
+                <span className="text-blueprint">Datos</span> que deciden.
               </h1>
 
               <p className="max-w-[52ch] text-pretty text-lg font-light leading-relaxed text-graphite md:text-xl">
-                Pascalcrea es una firma de <span className="text-ink">ingeniería digital</span>{" "}
-                que une <span className="text-ink">desarrollo web</span> y{" "}
-                <span className="text-ink">ciencia de datos</span> para construir sistemas
-                medibles, predecibles y listos para escalar.
+                Pascalcrea es una firma de <span className="text-ink">ingeniería digital</span>.
+                Construimos <span className="text-ink">sitios y sistemas web</span> que se
+                posicionan, se miden y se optimizan — y los conectamos con{" "}
+                <span className="text-ink">soluciones de datos</span> que sostienen las decisiones
+                del negocio.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -128,9 +130,9 @@ function HomePage() {
             <div className="md:col-span-4 flex flex-col gap-4">
               <div className="relative bg-cream p-1">
                 <img
-                  src={heroSystem}
-                  alt="Diagrama de topología de sistemas Pascalcrea"
-                  width={1080}
+                  src={heroInterface}
+                  alt="Esquema editorial: interfaz web conectada a una red de nodos de datos"
+                  width={1280}
                   height={1600}
                   className="h-[420px] w-full object-cover mix-blend-multiply md:h-[480px]"
                 />
@@ -138,8 +140,8 @@ function HomePage() {
               </div>
               <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-graphite">
                 <span>Fig. 01</span>
-                <span>Topología de sistema</span>
-                <span>v2.4</span>
+                <span>Interfaz · Sistema · Datos</span>
+                <span>v2.6</span>
               </div>
             </div>
           </div>
@@ -173,13 +175,13 @@ function HomePage() {
         <PageShell>
           <SectionHeader
             index="§ 01"
-            label="Servicios"
+            label="Servicios · Dos pilares"
             title={
               <>
-                Dos disciplinas. <span className="text-blueprint">Un mismo método.</span>
+                Web y datos. <span className="text-blueprint">Mismo peso, un mismo método.</span>
               </>
             }
-            description="Construimos software web y resolvemos problemas de datos bajo el mismo principio: sistemas que se pueden medir, auditar y escalar."
+            description="Diseñamos, desarrollamos y posicionamos activos digitales — y los conectamos con soluciones de datos que los hacen medibles, predecibles y rentables. Una sola lógica, dos disciplinas con el mismo protagonismo."
           />
 
           <div className="mt-16 grid grid-cols-1 gap-px bg-border md:grid-cols-2">
@@ -232,12 +234,12 @@ function HomePage() {
             <div className="md:col-span-5 flex flex-col gap-8">
               <SectionLabel index="§ 02">Integración</SectionLabel>
               <h2 className="text-balance font-display text-4xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
-                El ciclo completo, bajo un mismo techo.
+                Construir, posicionar, medir, optimizar.
               </h2>
               <p className="max-w-[48ch] text-pretty text-lg leading-relaxed text-graphite">
-                La mayoría de problemas que resolvemos viven en la frontera entre el producto web y
-                los datos que produce. Diseñar e implementar ambos lados, sin entregables sueltos
-                entre proveedores, es donde aparece la ventaja real.
+                Diseñamos el activo digital, lo lanzamos, lo posicionamos con SEO y campañas, y
+                cerramos el círculo con datos que muestran qué funciona y qué no. Sin entregables
+                sueltos entre proveedores: una misma firma, una misma metodología.
               </p>
               <Link
                 to="/proceso"
@@ -255,11 +257,11 @@ function HomePage() {
 
                 <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-5 md:items-center">
                   {[
-                    { code: "A", label: "Captura", sub: "App web · Eventos" },
-                    { code: "B", label: "Pipeline", sub: "ETL · Validación" },
-                    { code: "C", label: "Almacén", sub: "Warehouse" },
-                    { code: "D", label: "Modelo", sub: "ML · Análisis" },
-                    { code: "E", label: "Decisión", sub: "Producto · UI" },
+                    { code: "A", label: "Sitio · Sistema", sub: "Web · UX · Build" },
+                    { code: "B", label: "Tráfico", sub: "SEO · SEM · Ads" },
+                    { code: "C", label: "Eventos", sub: "Analítica · Tag" },
+                    { code: "D", label: "Modelo", sub: "Datos · ML" },
+                    { code: "E", label: "Decisión", sub: "Optimización" },
                   ].map((node, i, arr) => (
                     <div key={node.code} className="relative flex flex-col items-center text-center">
                       <div className="flex size-14 items-center justify-center border border-ink bg-paper font-mono text-sm font-medium tabular-nums">
@@ -279,8 +281,8 @@ function HomePage() {
                 </div>
 
                 <div className="mt-10 grid grid-cols-3 gap-4 border-t border-border pt-6 font-mono text-[10px] uppercase tracking-widest text-graphite">
-                  <div>Frontend · React · TS</div>
-                  <div>Cloud · Postgres · Edge</div>
+                  <div>Web · React · TS · CMS</div>
+                  <div>SEO · GA4 · Ads · GTM</div>
                   <div>Python · dbt · ML</div>
                 </div>
               </div>
@@ -322,8 +324,8 @@ function HomePage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7 relative bg-paper p-1">
               <img
-                src={systemFlow}
-                alt="Diagrama de flujo de datos y modelo predictivo"
+                src={webPerformance}
+                alt="Esquema editorial de un sitio web junto a una curva de performance comercial"
                 width={1280}
                 height={960}
                 loading="lazy"
@@ -333,31 +335,31 @@ function HomePage() {
             <div className="md:col-span-5 flex flex-col gap-6">
               <SectionLabel index="§ 04">Caso destacado</SectionLabel>
               <h2 className="font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-                Reducir la incertidumbre operativa.
+                Un e-commerce que vende mejor cada mes.
               </h2>
               <p className="text-pretty text-base leading-relaxed text-graphite md:text-lg">
-                Para una empresa logística, integramos su plataforma operativa con un modelo
-                predictivo que anticipa retrasos con 48 horas de antelación. Resultado: menos
-                cancelaciones, más visibilidad y un equipo que decide con datos.
+                Rediseñamos el sitio, reescribimos su SEO técnico, montamos campañas de Google Ads
+                con tracking limpio y conectamos las ventas a un modelo de atribución. El equipo
+                pasó de operar por intuición a decidir con datos cada semana.
               </p>
               <div className="grid grid-cols-3 gap-4 border-y border-border py-6">
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-graphite">
-                    Retrasos
+                    Conversión
                   </div>
-                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">−34%</div>
+                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">+58%</div>
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-graphite">
-                    Tiempo decisión
+                    Tráfico orgánico
                   </div>
-                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">−61%</div>
+                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">+212%</div>
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-graphite">
-                    Precisión
+                    CAC
                   </div>
-                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">0.94</div>
+                  <div className="mt-1 font-mono text-2xl tabular-nums text-ink">−37%</div>
                 </div>
               </div>
               <Link

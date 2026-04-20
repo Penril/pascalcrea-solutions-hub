@@ -8,13 +8,13 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Desarrollo web, ingeniería de datos y ciencia de datos. Dos pilares unificados bajo un mismo método de ingeniería digital.",
+          "Sitios y sistemas web, SEO, Google Ads, analítica y soluciones de datos. Dos pilares con el mismo peso, bajo un mismo método de ingeniería digital.",
       },
       { property: "og:title", content: "Servicios — Pascalcrea" },
       {
         property: "og:description",
         content:
-          "Sistemas web a medida + plataformas de datos. Conoce qué construimos y cómo lo entregamos.",
+          "Web + datos. Construimos, posicionamos, medimos y optimizamos activos digitales. Conoce qué hacemos y cómo lo entregamos.",
       },
     ],
   }),
@@ -24,50 +24,58 @@ export const Route = createFileRoute("/servicios")({
 const pillars = [
   {
     code: "01",
-    pillar: "Sistemas Web & Aplicaciones a Medida",
+    pillar: "Sitios Web, SEO & Analítica Digital",
     intro:
-      "Construimos plataformas web que tu equipo y tus usuarios pueden usar todos los días sin fricción. Stack moderno, performance medible, código mantenible.",
+      "Construimos sitios, e-commerce y sistemas web a medida — y nos hacemos cargo de que se posicionen, se midan y conviertan. Tu presencia digital tratada como un activo de negocio: diseño, desarrollo, posicionamiento y optimización continua bajo una misma firma.",
     services: [
       {
-        title: "Plataformas SaaS",
-        body: "Aplicaciones multi-tenant con autenticación, roles, billing y dashboards.",
+        title: "Sitios web & landing pages",
+        body: "Sitios corporativos y landings con foco en conversión, performance y SEO técnico desde el primer día.",
       },
       {
-        title: "Sistemas internos",
-        body: "Paneles operativos, ERPs ligeros y herramientas de back-office a medida.",
+        title: "E-commerce",
+        body: "Tiendas con catálogos complejos, integraciones de pago, envíos y tracking comercial completo.",
       },
       {
-        title: "E-commerce & marketplaces",
-        body: "Tiendas con catálogos complejos, integraciones de pago y envíos.",
+        title: "Plataformas & sistemas web",
+        body: "Sistemas a medida, paneles operativos y herramientas internas con autenticación, roles y dashboards.",
       },
       {
-        title: "Sitios institucionales",
-        body: "Sitios corporativos con SEO técnico, performance y CMS si es necesario.",
+        title: "SEO técnico & contenidos",
+        body: "Auditoría, arquitectura de información, optimización on-page y estrategia editorial sostenida.",
+      },
+      {
+        title: "Google Ads & SEM",
+        body: "Campañas de Search, Performance Max y remarketing con tracking limpio y atribución honesta.",
+      },
+      {
+        title: "Analítica & conversión",
+        body: "GA4, GTM, eventos personalizados y experimentos para mejorar conversión mes a mes.",
       },
     ],
-    stack: ["React / TypeScript", "Node · Edge functions", "PostgreSQL", "Tailwind", "Vercel · CF"],
+    stack: ["React / TypeScript", "Next · TanStack", "WordPress / Shopify", "GA4 · GTM", "Google Ads · SEO"],
   },
   {
     code: "02",
-    pillar: "Ingeniería & Ciencia de Datos",
+    pillar: "Datos, Ingeniería & Ciencia Aplicada",
     intro:
-      "Tomamos datos crudos y los convertimos en infraestructura confiable y modelos que tu negocio puede usar. Sin cajas negras, sin pipelines frágiles.",
+      "Tomamos datos crudos y los convertimos en infraestructura confiable, automatizaciones y modelos que el negocio puede usar. Sin cajas negras, sin pipelines frágiles — todo medible y auditable.",
     services: [
       {
-        title: "Pipelines ETL/ELT",
-        body: "Ingesta desde APIs, bases de datos y archivos. Validación y trazabilidad incluidas.",
+        title: "Automatización & ETL/ELT",
+        body: "Ingesta desde APIs, bases de datos y archivos. Validación, alertas y trazabilidad incluidas.",
       },
       {
         title: "Data warehousing",
         body: "Modelado dimensional con dbt sobre Postgres, BigQuery o Snowflake.",
       },
       {
-        title: "Modelos predictivos & ML",
-        body: "Forecasting, segmentación, scoring y deployment a producción.",
+        title: "Dashboards & analítica avanzada",
+        body: "Tableros de negocio integrados al producto o standalone, con métricas que el equipo realmente usa.",
       },
       {
-        title: "Análisis & dashboards",
-        body: "Tableros analíticos integrados al producto o standalone.",
+        title: "Modelos predictivos & ML",
+        body: "Forecasting, segmentación, scoring y deployment a producción con monitoreo continuo.",
       },
     ],
     stack: ["Python", "dbt", "Airflow / Dagster", "Postgres / BigQuery", "scikit-learn"],
@@ -90,13 +98,14 @@ function ServicesPage() {
             <div className="md:col-span-8 flex flex-col gap-8">
               <SectionLabel index="§ 01">Servicios · Catálogo</SectionLabel>
               <h1 className="text-balance font-display text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl lg:text-[80px]">
-                Lo que construimos,{" "}
-                <span className="text-blueprint">y cómo lo entregamos.</span>
+                Web y datos.{" "}
+                <span className="text-blueprint">Una sola firma, dos pilares.</span>
               </h1>
               <p className="max-w-[58ch] text-pretty text-lg font-light leading-relaxed text-graphite">
-                Trabajamos en dos disciplinas que se complementan: desarrollo web a medida e
-                infraestructura de datos. Puedes contratarnos para una sola, pero la mayoría de
-                problemas que vale la pena resolver viven en la intersección.
+                Construimos sitios y sistemas web, los posicionamos con SEO y campañas, los medimos
+                con analítica seria — y los conectamos con soluciones de datos que sostienen las
+                decisiones del negocio. Puedes contratar un solo pilar; la mayoría de problemas
+                que vale la pena resolver vive en la intersección.
               </p>
             </div>
             <div className="md:col-span-4 border border-border bg-paper p-6">

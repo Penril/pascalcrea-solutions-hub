@@ -16,8 +16,8 @@ export function SiteFooter() {
               <span className="font-display text-[15px] font-semibold">Pascalcrea</span>
             </div>
             <p className="mt-6 max-w-[40ch] text-pretty text-[15px] leading-relaxed text-graphite">
-              Firma de ingeniería digital que construye sistemas web a medida y plataformas de datos
-              para organizaciones que tratan su infraestructura digital como un activo estratégico.
+              Firma de ingeniería digital que une desarrollo web, SEO y ciencia de datos para
+              construir activos digitales medibles, posicionados y rentables.
             </p>
             <div className="mt-8 inline-flex items-center gap-2 border border-border px-3 py-1.5">
               <span className="relative flex size-1.5">
@@ -96,7 +96,7 @@ export function SiteFooter() {
           <div>© {year} Pascalcrea · Todos los derechos reservados</div>
           <div className="flex gap-6">
             <span>Rev. 2026.04</span>
-            <span>Spec v2.4</span>
+            <span>Spec v2.6</span>
             <span className="text-blueprint">Build OK</span>
           </div>
         </div>

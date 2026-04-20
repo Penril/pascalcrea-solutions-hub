@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import { PageShell } from "@/components/editorial";
 
 /**
@@ -9,7 +10,7 @@ import { PageShell } from "@/components/editorial";
 
 type Logo = {
   name: string;
-  render: (props: { className?: string }) => JSX.Element;
+  render: (props: { className?: string }) => ReactElement;
 };
 
 const logos: Logo[] = [

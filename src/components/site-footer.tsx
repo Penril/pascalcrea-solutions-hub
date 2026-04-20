@@ -16,8 +16,8 @@ export function SiteFooter() {
               <span className="font-display text-[15px] font-semibold">Pascalcrea</span>
             </div>
             <p className="mt-6 max-w-[40ch] text-pretty text-[15px] leading-relaxed text-graphite">
-              Estudio de ingeniería que construye software web y sistemas de datos para organizaciones
-              que tratan su infraestructura digital como un activo estratégico.
+              Firma de ingeniería digital que construye sistemas web a medida y plataformas de datos
+              para organizaciones que tratan su infraestructura digital como un activo estratégico.
             </p>
             <div className="mt-8 inline-flex items-center gap-2 border border-border px-3 py-1.5">
               <span className="relative flex size-1.5">

@@ -8,13 +8,13 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Desarrollo web, ingeniería de datos y ciencia de datos. Dos pilares unificados bajo un mismo método de ingeniería.",
+          "Desarrollo web, ingeniería de datos y ciencia de datos. Dos pilares unificados bajo un mismo método de ingeniería digital.",
       },
       { property: "og:title", content: "Servicios — Pascalcrea" },
       {
         property: "og:description",
         content:
-          "Software web a medida + sistemas de datos. Conoce qué construimos y cómo lo entregamos.",
+          "Sistemas web a medida + plataformas de datos. Conoce qué construimos y cómo lo entregamos.",
       },
     ],
   }),
@@ -24,9 +24,9 @@ export const Route = createFileRoute("/servicios")({
 const pillars = [
   {
     code: "01",
-    pillar: "Software & Aplicaciones Web",
+    pillar: "Sistemas Web & Aplicaciones a Medida",
     intro:
-      "Construimos productos web que tu equipo y tus usuarios pueden usar todos los días sin fricción. Stack moderno, performance medible, código mantenible.",
+      "Construimos plataformas web que tu equipo y tus usuarios pueden usar todos los días sin fricción. Stack moderno, performance medible, código mantenible.",
     services: [
       {
         title: "Plataformas SaaS",
@@ -94,9 +94,9 @@ function ServicesPage() {
                 <span className="text-blueprint">y cómo lo entregamos.</span>
               </h1>
               <p className="max-w-[58ch] text-pretty text-lg font-light leading-relaxed text-graphite">
-                Trabajamos en dos disciplinas que se complementan: software web e infraestructura de
-                datos. Puedes contratarnos para una sola, pero la mayoría de problemas que vale la
-                pena resolver viven en la intersección.
+                Trabajamos en dos disciplinas que se complementan: desarrollo web a medida e
+                infraestructura de datos. Puedes contratarnos para una sola, pero la mayoría de
+                problemas que vale la pena resolver viven en la intersección.
               </p>
             </div>
             <div className="md:col-span-4 border border-border bg-paper p-6">

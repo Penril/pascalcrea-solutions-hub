@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, SectionLabel } from "@/components/editorial";
-import aboutTeam from "@/assets/about-team.jpg";
+import studioCraft from "@/assets/studio-craft.jpg";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
@@ -9,9 +9,9 @@ export const Route = createFileRoute("/sobre")({
       {
         name: "description",
         content:
-          "Pascalcrea es un estudio de ingeniería remoto que combina desarrollo web y ciencia de datos. Conoce el equipo y los principios.",
+          "Pascalcrea es una firma de ingeniería digital remota que combina desarrollo web y ciencia de datos. Conoce el equipo y los principios.",
       },
-      { property: "og:title", content: "Sobre Pascalcrea — Estudio de ingeniería" },
+      { property: "og:title", content: "Sobre Pascalcrea — Ingeniería digital" },
       {
         property: "og:description",
         content:
@@ -31,14 +31,14 @@ function AboutPage() {
             <div className="md:col-span-7 flex flex-col gap-8">
               <SectionLabel index="§ 04">Estudio</SectionLabel>
               <h1 className="text-balance font-display text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl lg:text-[80px]">
-                Un estudio pequeño,
+                Un equipo pequeño,
                 <br />
-                <span className="text-blueprint">construyendo cosas serias.</span>
+                <span className="text-blueprint">construyendo sistemas serios.</span>
               </h1>
               <p className="max-w-[58ch] text-pretty text-lg font-light leading-relaxed text-graphite">
-                Pascalcrea nace de la idea de que el software web y los datos no son disciplinas
-                separadas: son dos caras del mismo sistema. Combinamos ambas porque la mayoría de
-                problemas valiosos viven en su intersección.
+                Pascalcrea nace de la idea de que el desarrollo web y los datos no son disciplinas
+                separadas: son dos caras del mismo sistema digital. Combinamos ambas porque la
+                mayoría de problemas valiosos viven en su intersección.
               </p>
               <p className="max-w-[58ch] text-pretty text-base leading-relaxed text-graphite">
                 Trabajamos remoto desde LATAM con clientes de Latinoamérica y Estados Unidos.
@@ -50,8 +50,8 @@ function AboutPage() {
             <div className="md:col-span-5">
               <div className="relative bg-cream p-1">
                 <img
-                  src={aboutTeam}
-                  alt="Equipo Pascalcrea trabajando"
+                  src={studioCraft}
+                  alt="Mesa de trabajo: laptop, cuaderno con diagramas de sistema y notas técnicas"
                   width={1280}
                   height={960}
                   loading="lazy"
@@ -60,7 +60,7 @@ function AboutPage() {
               </div>
               <div className="mt-3 flex justify-between font-mono text-[10px] uppercase tracking-widest text-graphite">
                 <span>Fig. 03</span>
-                <span>Estudio · LATAM</span>
+                <span>Mesa de trabajo · LATAM</span>
               </div>
             </div>
           </div>

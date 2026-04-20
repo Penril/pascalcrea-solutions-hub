@@ -1,22 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, SectionHeader, SectionLabel } from "@/components/editorial";
-import heroBlueprint from "@/assets/hero-blueprint.jpg";
-import dataChart from "@/assets/data-chart.jpg";
+import heroSystem from "@/assets/hero-system.jpg";
+import systemFlow from "@/assets/system-flow.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pascalcrea — Software web y sistemas de datos" },
+      { title: "Pascalcrea — Sistemas web y plataformas de datos" },
       {
         name: "description",
         content:
-          "Diseñamos aplicaciones web de alta precisión y sistemas de datos para empresas que toman decisiones basadas en evidencia.",
+          "Diseñamos sistemas web a medida y plataformas de datos para empresas que toman decisiones basadas en evidencia.",
       },
-      { property: "og:title", content: "Pascalcrea — Software web y sistemas de datos" },
+      { property: "og:title", content: "Pascalcrea — Sistemas web y plataformas de datos" },
       {
         property: "og:description",
         content:
-          "Estudio de ingeniería web + ciencia de datos. Construimos software medible, predecible y listo para escalar.",
+          "Ingeniería web + ciencia de datos. Construimos sistemas digitales medibles, predecibles y listos para escalar.",
       },
     ],
   }),
@@ -26,14 +26,14 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     code: "01",
-    title: "Software & Aplicaciones Web",
+    title: "Sistemas Web & Aplicaciones a Medida",
     summary:
-      "Diseñamos sistemas SaaS, plataformas internas y aplicaciones a medida. Arquitectura tipada de extremo a extremo, performance medible y código que envejece bien.",
+      "Construimos plataformas SaaS, sistemas internos y aplicaciones web a medida. Arquitectura tipada de extremo a extremo, performance medible y código que envejece bien.",
     items: [
       "Plataformas SaaS multi-tenant",
       "Dashboards y paneles operativos",
       "E-commerce e integraciones",
-      "Aplicaciones a medida",
+      "Aplicaciones web a medida",
     ],
   },
   {
@@ -101,8 +101,9 @@ function HomePage() {
               </h1>
 
               <p className="max-w-[52ch] text-pretty text-lg font-light leading-relaxed text-graphite md:text-xl">
-                Pascalcrea es un estudio que combina <span className="text-ink">ingeniería web</span>{" "}
-                y <span className="text-ink">ciencia de datos</span> para construir productos
+                Pascalcrea es una firma de <span className="text-ink">ingeniería digital</span>{" "}
+                que une <span className="text-ink">desarrollo web</span> y{" "}
+                <span className="text-ink">ciencia de datos</span> para construir sistemas
                 medibles, predecibles y listos para escalar.
               </p>
 
@@ -127,8 +128,8 @@ function HomePage() {
             <div className="md:col-span-4 flex flex-col gap-4">
               <div className="relative bg-cream p-1">
                 <img
-                  src={heroBlueprint}
-                  alt="Diagrama arquitectónico de sistemas Pascalcrea"
+                  src={heroSystem}
+                  alt="Diagrama de topología de sistemas Pascalcrea"
                   width={1080}
                   height={1600}
                   className="h-[420px] w-full object-cover mix-blend-multiply md:h-[480px]"
@@ -137,7 +138,7 @@ function HomePage() {
               </div>
               <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-graphite">
                 <span>Fig. 01</span>
-                <span>Topología modular</span>
+                <span>Topología de sistema</span>
                 <span>v2.4</span>
               </div>
             </div>
@@ -321,8 +322,8 @@ function HomePage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7 relative bg-paper p-1">
               <img
-                src={dataChart}
-                alt="Modelo de datos abstracto"
+                src={systemFlow}
+                alt="Diagrama de flujo de datos y modelo predictivo"
                 width={1280}
                 height={960}
                 loading="lazy"

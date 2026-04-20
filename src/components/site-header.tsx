@@ -24,7 +24,7 @@ export function SiteHeader() {
           </div>
           <span className="font-display text-[15px] font-semibold tracking-tight">Pascalcrea</span>
           <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-graphite md:inline">
-            / Estudio de ingeniería
+            / Ingeniería digital
           </span>
         </Link>
 

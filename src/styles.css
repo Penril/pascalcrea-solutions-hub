@@ -47,6 +47,9 @@
   --color-blueprint-soft: var(--blueprint-soft);
   --color-grid: var(--grid);
   --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-sand: var(--sand);
+  --color-clay: var(--clay);
   --color-signal: var(--signal);
 
   --color-chart-1: var(--chart-1);

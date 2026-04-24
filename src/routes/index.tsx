@@ -232,7 +232,7 @@ function HomePage() {
       </section>
 
       {/* INTEGRATION DIAGRAM */}
-      <section className="border-b border-border bg-cream/40 py-24 md:py-32">
+      <section className="border-b border-border bg-cream/70 py-24 md:py-32">
         <PageShell>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <div className="md:col-span-5 flex flex-col gap-8">

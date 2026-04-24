@@ -185,7 +185,7 @@ export function ClientLogos() {
   return (
     <section
       aria-label="Clientes y colaboradores"
-      className="border-b border-border bg-paper"
+      className="border-b border-border bg-cream/60"
     >
       <PageShell>
         <div className="flex flex-col gap-8 py-14 md:py-16">

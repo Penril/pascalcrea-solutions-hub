@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-border bg-paper">
+    <footer className="border-t border-border bg-cream/50">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-10">
         <div className="grid grid-cols-1 gap-12 py-16 md:grid-cols-12">
           <div className="md:col-span-5">

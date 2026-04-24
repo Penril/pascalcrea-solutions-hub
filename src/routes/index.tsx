@@ -129,7 +129,7 @@ function HomePage() {
             </div>
 
             <div className="md:col-span-4 flex flex-col gap-4">
-              <div className="relative bg-cream p-1">
+              <div className="relative bg-sand/55 p-1">
                 <img
                   src={heroInterface}
                   alt="Esquema editorial: interfaz web conectada a una red de nodos de datos"
@@ -149,7 +149,7 @@ function HomePage() {
         </PageShell>
 
         {/* Stats strip */}
-        <div className="border-t border-border bg-cream/40">
+        <div className="border-t border-border bg-cream-deep/55">
           <PageShell>
             <div className="grid grid-cols-2 divide-border md:grid-cols-4 md:divide-x">
               {stats.map((s, i) => (
@@ -232,7 +232,7 @@ function HomePage() {
       </section>
 
       {/* INTEGRATION DIAGRAM */}
-      <section className="border-b border-border bg-cream/40 py-24 md:py-32">
+      <section className="border-b border-border bg-cream/70 py-24 md:py-32">
         <PageShell>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <div className="md:col-span-5 flex flex-col gap-8">
@@ -323,7 +323,7 @@ function HomePage() {
       </section>
 
       {/* CASE TEASER */}
-      <section className="border-b border-border bg-cream/40 py-24 md:py-32">
+      <section className="border-b border-border bg-sand/40 py-24 md:py-32">
         <PageShell>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7 relative bg-paper p-1">

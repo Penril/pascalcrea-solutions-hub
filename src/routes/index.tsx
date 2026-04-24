@@ -129,7 +129,7 @@ function HomePage() {
             </div>
 
             <div className="md:col-span-4 flex flex-col gap-4">
-              <div className="relative bg-cream p-1">
+              <div className="relative bg-sand/55 p-1">
                 <img
                   src={heroInterface}
                   alt="Esquema editorial: interfaz web conectada a una red de nodos de datos"

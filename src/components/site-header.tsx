@@ -14,7 +14,7 @@ export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-paper/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-paper/75 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-[1440px] items-center justify-between px-6 md:px-10">
         <Link to="/" className="group flex items-center gap-2.5">
           <div className="relative size-4">

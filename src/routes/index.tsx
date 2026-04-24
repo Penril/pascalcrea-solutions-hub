@@ -149,7 +149,7 @@ function HomePage() {
         </PageShell>
 
         {/* Stats strip */}
-        <div className="border-t border-border bg-cream/40">
+        <div className="border-t border-border bg-cream-deep/55">
           <PageShell>
             <div className="grid grid-cols-2 divide-border md:grid-cols-4 md:divide-x">
               {stats.map((s, i) => (
